@@ -1,0 +1,650 @@
+/*** Reseteo Propiedades ***/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Hace que la transicion sea fluida y menos brusca */
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+/*** BODY ***/
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*** HEADER ***/
+
+header {
+    width: 100%;
+    height: 75px;
+    /* Hace que toda la navegacion se quede fija en la pantalla */
+    position: fixed;
+    top: 0;
+    /* z-index: 100; */
+    background-color: black;
+}
+
+/*** BARRA BUSQUEDA ***/
+/* Posicionamiento de la barra de busqueda */
+.topnav {    
+    overflow: hidden;
+    background-color: black;
+    /* text-align: center;
+    margin-left: 150px;
+    width: 40%;
+    padding-top: 21px;
+    float: left; */
+}
+
+.topnav nav {
+    /* margin-left: 62%; */
+    margin-top: 20px;
+}
+
+.topnav nav ul {    
+    text-align: center;
+    width: 50%;
+    height: 5vh;
+    position: absolute;
+    margin-left: 53%;
+    bottom: 2px;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 2%;
+    /* border-top: 2px solid white; */
+    /* margin-top: 14px; */
+}
+
+.topnav nav ul li a {
+
+    /* display: block; */
+    color: #28cc8c;
+    text-align: center;
+    padding: 3px 2%;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+ 
+
+.topnav a:hover {
+    color: white;
+    border-top: white solid 3px;
+}
+
+.topnav a:active {
+    border-top: 2px solid white;
+    transition-delay: 1s;
+}
+
+.topnav .contenedor_BarraBusqueda {
+    float: left;
+    margin-left:150px;
+}
+
+  /* Poner el estilo de dentro de la barra de busqueda */
+.topnav input[type=text] {
+    background-color: #28cc8c;
+    padding: 6px;
+    border: none;
+    font-size: 18px;
+    /* border-radius: 3px; */
+    width: 550px;
+}
+
+.contenedor_BarraBusqueda button {
+  float: right;
+  padding: 6px;
+  background: #28cc8c;
+  /* margin: 8px 0 0 0px ; */
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .contenedor_BarraBusqueda button:hover {
+    background-color: #526427;
+    transition: 0.5s;
+}
+
+/*** Fija el logo a la esquina y lo posiciona de forma absoluta ***/
+
+#logo img{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 75px;
+    /* height: 75px; */
+    /* object-fit: contain; */
+
+    /* height: 100vh; */
+}
+
+/*** MAIN ***/
+/*** Fijo las caracteristicas de los titulos ***/
+h2 {
+    font-size: 56px;
+    color: white;
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+}
+
+h4 {
+    font-size: 16px;
+    color: white;
+    font-style: normal;
+}
+
+h5 {
+    font-size: 12px;
+    color: #B5B2B2;
+}
+
+/*** SECCION INICIO PAGINA ***/
+
+#sectionImagen {
+    margin-top: 40px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/gimnasio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*** Titulo de la seccion ***/
+
+#sectionImagen h1 {
+    color: white;
+    vertical-align: middle;
+    font-size: 107px;
+    padding-top: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*** Boton que desliza hacia el final de la pagina ***/
+
+#sectionImagen button {
+    background-color: #28cc8c;
+    font-style: arial;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border-style: solid black;
+    height: 50px;
+    margin-top: 200px;
+    font-size: 35px; 
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sectionImagen button:hover {
+    background-color: #526427;
+    transition: 0.5s;
+}
+
+#sectionImagen button a{
+    color: black;
+}
+
+/*** SECCION PLANES ENTRENAMIENTO ***/
+
+#Planes {
+    width: 100%;
+    height: 1000px;
+    margin-bottom: 75px;
+}
+
+#Planes h2 {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Planes h4 {
+    font-size: 20px;
+    padding-top: 50px;
+    font-weight: lighter;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenesPlanes {
+    border-radius: 50%; /* Redondear las imagenes */ 
+    object-fit: cover; /* Para que coja la imagen tal cual las dimensiones con buena calidad */
+    width: 45%;
+    height: 225px;
+    margin: 65px 125px;
+    margin-bottom: 40px;
+}
+
+.contenedor {
+    width: 80%;
+    height: 800px;
+    margin-left: 10%;
+}
+
+.contenedor .miniContenedores {
+    width: 33%;
+    height: 600px;
+    float: left;
+    padding-left: 20px;
+}
+
+.contenedor .miniContenedores image {
+    /* Sirve para centrar en linea los elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenedor .miniContenedores h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.contenedor .miniContenedores p {
+    color: white;
+    padding-top: 30px;
+    width: 55%;
+    text-align: justify;
+    margin-left: 100px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+/*** SECCION DE LA TIENDA ***/
+
+#Tienda {
+    background-color: #526427;
+    width: 100%;
+    height: 800px;
+}
+
+#Tienda h2 {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.imagenesTiendaInicio {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.contenedorTienda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajasTienda h4{
+    background-color: black;
+    width: 90%;
+    padding-left: 10px;
+}
+
+.cajasTienda p {
+    background-color: black;
+    color: rgb(170, 170, 156);
+    width: 90%;
+    padding-left: 10px;
+}
+
+#Tienda button {
+    background-color: black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 13px 50px;
+}
+
+#Tienda button a {
+    text-decoration: none;
+}
+
+/*** SECCION DEL BLOG ***/
+
+#Blog {
+    background-color: black;
+    width: 100%;
+    height: 1500px;
+    margin-bottom: 100px;
+}
+
+.entradasBlog {
+    display: flex;
+    justify-content: space-evenly; /* Hace que ocupen el espacio que tienen equitativamente */
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    margin-left: 25%;
+    margin-top: 100px;
+    border: grey solid 1px;
+}
+
+.imagenBlog {
+    width: 100%;
+    height: 390px;
+}
+
+.Textos {
+    width: 50%;
+    padding: 50px 30px 70px 30px;
+    text-align: justify;
+}
+
+.Textos h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.Textos p {
+    font-size: 16px;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    border-bottom: grey 1px solid;
+    padding-bottom: 120px;
+}
+
+.corazon {
+    float: right;
+    margin: 365px 20px 20px 0;
+    width: 2%;
+    height: 20px;
+}
+
+#Blog button {
+    background-color: #526427;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 13px 50px;
+    text-decoration: none;
+}
+
+#Blog button a{
+    text-decoration: none;
+}
+
+/***** FOOTER *****/
+
+footer {
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    clear: left;
+    
+}
+
+/*** Flota todos los section del footer ***/
+footer section {
+    float: left
+}
+
+
+/*** REDES SOCIALES ***/
+#socialNetworks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 50px;
+}
+
+.logosRedesSociales {
+    width: 100%;
+    height: 55px;
+    padding-left: 15px; 
+}
+
+/*** SPEECH ***/
+#motivationalSpeech {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#gokuTraining {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 17%;
+    height: 130px;
+    margin-right: 10px;
+}
+
+#texto {
+    border-left: 5px solid #4864cc;
+}
+
+#texto h4{
+    margin-left: 10px;
+    font-size: 18px;
+    font-style: oblique;
+}
+
+#texto p{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: lighter;
+    color: white;
+}
+
+/*** BOTONES FAQ, Devoluciones y Atencion al cliente ***/
+
+#Buttons {
+    align-items: center; /*para centrarlos verticalmente*/
+    justify-content: center;
+    flex-direction: column; /*para que se coloquen uno abajo del otro*/
+    text-align:center;
+    height: 200px;
+}
+
+.botones {
+    width: 100%;
+    height: 65px;
+    background-color: #526427;
+    font-size: 18px;
+}
+
+.botones a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Copyright */
+#motivationalSpeech h5 {
+    margin-top: 150px;
+}
+
+/* Metodos de pago */
+#metodosPago {
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+/********** Menu desplegable **********/
+.topnav nav ul ul 
+{
+    display:none; /* Escondemos el submenu mediante display:none */
+    position:absolute;
+    top:50%;
+    right:135px;
+    padding:0;
+}
+
+.topnav nav ul ul li {
+    width: 130px;
+    float:none; /* Mediante float:none, conseguimos que el submenu se despliegue de forma vertical en vez de horizontal */
+    display: block;
+    text-align: left;
+    background:#000000;
+}
+
+.topnav nav ul ul a {
+    line-height:200%;
+    padding:10px 15px;
+}
+
+.topnav nav ul li:hover > ul {
+    display:block; /* Muestra el submenu que estaba escondido */
+}
+
+.topnav nav ul ul li a:hover {
+    text-decoration: none;
+    border: none;
+}
+
+.topnav nav ul ul li:hover {
+    color: white;
+}
+
+/*******************TABLETS*******************/
+@media (max-width: 1300px)
+{
+    /* Vuelvo a colocar en su sitio los submenus */
+    .topnav nav ul ul {
+        right: -93px;
+    }
+
+
+    .topnav nav ul li a
+    {
+        font-size: 18px;
+    }
+
+    .topnav 
+    {
+        width: 100%;
+        height: 75px;
+    }
+
+    .topnav nav ul 
+    {
+        float: none;
+        text-align: left;
+        width: 100%;
+    }
+
+    .topnav ul li
+    {
+        margin: 0 5px;
+    }
+
+    .topnav input[type=text]
+    {
+        width: 300px;
+        padding-left: 50px;
+    }
+
+    .topnav .contenedor_BarraBusqueda
+    {
+        margin-left: 100px ;
+    }
+}
+/*******************Mobile devices*******************/
+.checkbtn
+{
+    font-size: 30px;
+    color: #28cc8c;
+    float: right;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check 
+{
+    display: none;
+}
+
+@media (max-width: 900px)
+{
+    /* Oculto los submenus */
+    .topnav nav ul ul 
+    {
+        right:-100%;
+    }
+
+    .topnav
+    {
+        width: 100%;
+    }
+    .topnav input[type=text]
+    {
+        width: 250px;
+        padding-left: 50px;
+    }
+
+    .checkbtn
+    {
+        display: block;
+        margin-right: 30px;
+    }
+    .topnav nav ul
+    {
+        position: fixed;
+        height: 100vh;
+        background-color: #0e0a0a;
+        top: 75px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .topnav ul li 
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 70px;
+    }
+    
+    .topnav nav ul li a {
+        font-size: 40px;
+    }
+
+    .topnav ul li:hover
+    {
+        background-color: #696969;
+        color: white;
+    }
+
+    .topnav ul li a:hover, .topnav ul li a:active
+    {
+        background: none;
+        border: none;
+        color: white;
+    }
+    #check:checked ~ ul {
+        right: 0;
+    }
+
+    
+}

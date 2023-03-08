@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Reach Your Pyke</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="">
+    <link rel="stylesheet" href="HojasDeEstilos/estilosReachYourPyke.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Queda por arreglar que no me sale el icono, lo he probado con varias imagenes y formatos pero sigue sin salir -->
+
+    <link rel="icon" href="images/icon.ico" type="ico">
+</head>
+
+<body>
+
+    <header>
+        <!-- Cuando pulses el logo te lleva al inicio de la pagina  -->
+        <a href="#sectionImagen"><section id = "logo" >
+            <img src="images/REACH_UR_PYKE_transparent.png" alt="">
+        </section></a>        
+            <!-- Barra de busqueda, ahora mismo indicada solo y deja escribir en ella -->
+        <section class="topnav">
+            <section>
+                <nav>
+                    <!-- Barras responsive movil -->
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li> <a href="#sectionImagen">Inicio</a></li>
+                        <li> <a href="#" class="a">Blog</a></li>
+                        <li> <a href="#" class="a">Planes</a>
+                            <ul> <!-- Submenu -->
+                                <li><a href="#" class="a">Adelgazar</a></li>
+                                <li><a href="#" class="a">Volumen</a></li>
+                                <li><a href="#" class="a">Principiante</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="">Material</a></li>
+                        <li> <a href="">Musica</a></li>
+                        <li> <a href="">Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+            <section class="contenedor_BarraBusqueda">
+                <form>
+                    <input type="text" placeholder="Buscar..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </section>
+        </section>
+        
+    </header>
+
+            
+
+    <main>
+        <section id="sectionImagen">
+            <h1>Reach your Pyke</h1>
+            <!-- Boton que te lleva al final de la pagina -->
+            <button name="button"><a href="#Blog">▼</a></button> 
+        </section>
+
+        <section id="Planes">
+            <h2>Planes de Entrenamiento</h2>
+            <h4>Nunca es tarde para empezar a cambiar</h4>
+            
+            <!-- Contenedor principal -->
+            <section class="contenedor">
+                <!-- Bloques por cada plan -->
+                <section class="miniContenedores">
+                    <!-- Links vacios pero llevaran al plan en concreto -->
+                    <a href=""><img class="imagenesPlanes" src="images/Adelgazar.jpg" alt="Adelgazar"></a>
+                    <h3>Plan adelgazar</h3>
+                    <p>Un plan para adelgazar no debería basarse en dejar de comer, en algunos casos lleva a problemas más graves, por lo que te presentamos otras formas de adelgazar que disfrutaras sin tener que privarte de comidas y entreno excesivo.</p>
+                </section>
+                <section class="miniContenedores">
+                    <a href=""><img class="imagenesPlanes" src="images/Volumen.jpg" alt="Volumen"></a>
+                    <h3>Plan ganancia Muscular</h3>
+                    <p>Para aquellos que les cueste subir de peso y ganar masa muscular te enseñaremos como disfrutar de buenas comidas que te sacien y te ayuden junto a un entreno de fuerza a ganar ese peso que deseas.</p>
+                </section>
+                <section class="miniContenedores">
+                    <a href=""><img class="imagenesPlanes" src="images/PushUpImage.png" alt="Principiante"></a>
+                    <h3>Plan para principiantes</h3>
+                    <p>Para aquellos iniciando en el deporte, pondremos distintos puntos de partida, por suerte cuando se inicia en el deporte de fuerza se dan cosas maravillosas como poder perder peso y ganar masa muscular a su vez.</p>
+                </section>
+            </section>
+
+            
+        </section>
+
+        <section id="Tienda">
+            <h2>Explora la colección</h2>
+            <!-- Contenedor principal -->
+            <section class="contenedorTienda">
+                <!-- Bloques por cada producto -->
+                <section class="cajasTienda">
+                    <!-- Links vacios pero llevaran a la pagina del producto  -->
+                    <a href=""><img class="imagenesTiendaInicio" src="images/TRX1.jpeg" alt="TRX"></a>
+                    <h4>TRX</h4>
+                    <p>19,99€</p>
+                </section>
+                <section class="cajasTienda">
+                    <a href=""><img class="imagenesTiendaInicio" src="images/Dumbells.jpg" alt="Mancuernas"></a>
+                    <h4>Kit de mancuernas 20KG</h4>
+                    <p>34,99€</p>
+                </section>
+                <section class="cajasTienda">
+                    <a href=""><img class="imagenesTiendaInicio" src="images/Kettlebell.jpg" alt="Kettlebell"></a>
+                    <h4>Kettlebells</h4>
+                    <p>13,99€</p>
+                </section>
+                <section class="cajasTienda">
+                    <a href=""><img class="imagenesTiendaInicio" src="images/Esterilla.jpg" alt="Esterilla"></a>
+                    <h4>Esterilla 140x50 cm</h4>
+                    <p>3,99€</p>
+                </section>
+            </section>
+            
+            <!-- Boton que te lleva a la pagina de la tienda principal -->
+            <button id ="botonComprarAhora">
+                <a href="">
+                    <h4>Compra ahora</h4>
+                </a>
+            </button>
+
+        </section>
+
+        <!-- Contenedor blog -->
+        <section id="Blog">
+            <!-- Entradas de cada blog -->
+            <section class="entradasBlog">
+                <!-- Al pulsar la imagen te lleva a la pagina del blog seleccionado -->
+                <a href=""><img class="imagenBlog" src="images/Dominada.jpg" alt="Dominada"></a>
+                <section class="Textos">
+                    <h3>Los 5 Ejercicios mas complejos TREN SUPERIOR</h3>
+                    <p>Estos son los 5 ejercicios más completos de tren superior, algunos ya conocidos y otros que quizás no sabrías anteriormente que era tan completos. La mayoria de ellos podras incluirlos en tus sesiones de entrenamiento facilmente o incluso alguna variacion de este.</p>
+                </section>
+                <!-- Imagen vacia pero llevara un contador de me gustas, visualizaciones y comentarios posteriormente -->
+                <img class="corazon" src="images/corazonTransparenteVacio.png" alt="corazonVacio">
+            </section>
+            <section class="entradasBlog">
+                <a href=""><img class="imagenBlog" src="images/Recetas-con-avena.jpg" alt="Avena"></a>
+                <section class="Textos">
+                    <h3>Recetas que puedes hacer si tienes POCO tiempo</h3>
+                    <p>En caso de que tengas poco tiempo para prepararte una comida, aqui te dejamos varias ideas de recetas, con una buena aportacion de nutrientes...</p>
+                </section>
+                <img class="corazon" src="images/corazonTransparenteVacio.png" alt="corazonVacio">
+            </section>
+
+            <section class="entradasBlog">
+                <a href=""><img class="imagenBlog" src="images/Zancada.jpg" alt="Zancada"></a>
+                <section class="Textos">
+                    <h3>Ejercicio MAS complejos TREN INFERIOR</h3>
+                    <p>Estos son los ejercicios mas completos de tren inferior, o ejercicios que mas grupos musculares abarca para un entrenamiento mas...</p>
+                </section>
+                <img class="corazon" src="images/corazonTransparenteVacio.png" alt="corazonVacio">
+            </section>
+
+                <!-- Te lleva donde puedes ver todas las entradas de los blogs -->
+                <button id ="botonVerMas">
+                    <a href="">
+                        <h4>Ver mas</h4>
+                    </a>
+                </button>
+
+        </section>
+
+    </main>
+
+</body>
+
+<footer>
+    <!-- Contenedor de las redes sociales que te llevan a la pagina de su respectiva red segun la imagen -->
+    <section id="socialNetworks">
+        <a href="http://www.facebook.com"><img class="logosRedesSociales" src="images/FaceboolLogo.png" alt="Facebook"></a>
+        <a href="http://www.instagram.com"><img class="logosRedesSociales" src="images/instagramLogo.png" alt="Instagram"></a>
+        <a href="http://www.twitter.com"><img class="logosRedesSociales" src="images/twitterLogo.png" alt="Twitter"></a>
+    </section>
+
+    <!-- Contenedor del Speech, con su imagen y la frase, aprovechando que esta por el centro coloco aqui tambien el copyright -->
+    <section id="motivationalSpeech">
+        <img id="gokuTraining" src="images/GokuTraining.jpg" alt = "GokuTraining">
+        <section id="texto">
+            <h4>"La fortaleza no llega de la capacidad física. Llega de una voluntad indomable"</h4>
+            <p>-Mahatma Gandhi</p>
+        </section>
+        <h5> &copy; 2023 </h5>
+    </section>
+
+    <!-- Contenedor de los botones de FAQ, devoluciones y atencion al cliente -->
+    <section id="Buttons">
+        <button class ="botones">
+            <a href="">
+                <p>Politica de devoluciones</p>
+            </a>
+        </button>
+        <button class ="botones">
+            <a href="">
+                <p>FAQ</p>
+            </a>
+        </button>
+        <button class ="botones">
+            <a href="">
+                <p>Atencion al cliente</p>
+            </a>
+        </button>
+    </section>
+   
+    <!-- Contenedor de la imagen con los metodos de pago -->
+    <section id="metodosPago">
+       <img src="images/boton-comprar.png" alt="Compra Ahora">
+    </section>
+   
+</footer>
+    
+
+</html>
