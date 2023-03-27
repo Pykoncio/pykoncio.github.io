@@ -187,7 +187,7 @@ h4 {
 
 #Planes {
     width: 100%;
-    height: 1000px;
+    height: 900px;
     margin-bottom: 75px;
 }
 
@@ -214,7 +214,7 @@ h4 {
     object-fit: cover; /* Para que coja la imagen tal cual las dimensiones con buena calidad */
     width: 225px;
     height: 225px;
-    margin: 65px 150px;
+    margin: 65px 25%;
     margin-bottom: 40px;
 }
 
@@ -226,7 +226,7 @@ h4 {
 
 .contenedor .miniContenedores {
     width: 33%;
-    height: 600px;
+    height: 700px;
     float: left;
     padding-left: 20px;
 }
@@ -236,15 +236,17 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .contenedor .miniContenedores h3 {
-    display: flex;
+    /* display: flex; */
+    text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-top: 20px;
     font-size: 30px;
-    margin-right: 50px;
+    margin: 0 25%;
 }
 
 .contenedor .miniContenedores p {
@@ -252,9 +254,10 @@ h4 {
     padding-top: 30px;
     width: 55%;
     text-align: justify;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     font-weight: lighter;
     font-size: 20px;
+    margin: 0 25%;
 }
 
 /*** SECCION DE LA TIENDA ***/
@@ -601,7 +604,7 @@ footer {
     /********* Plans Section **********/
     #Planes
     {
-        height: 800px;
+        height: 850px;
     }
 
     #Planes h2
@@ -618,7 +621,6 @@ footer {
     {
         height: 180px;
         width: 180px;
-        margin: 55px 100px;
         text-align: center;
     }
 
@@ -629,17 +631,21 @@ footer {
         margin: 0;
     }
 
+    .contenedor .miniContenedores
+    {
+        padding: 0;
+    }
+
     .contenedor .miniContenedores h3
     {
         padding-top: 0;
-        font-size: 25px;
+        text-align: center;
     }
 
     .contenedor .miniContenedores p
     {
-        width: 65%;
+        width: 60%;
         font-size: 18px;
-        margin-left: 60px;
         text-align: center;
     }
 
@@ -702,20 +708,20 @@ footer {
 
     #texto
     {
-        margin-left: 0;
+        margin-left: 20px;
         padding-left: 20px;
     }
 
     #socialNetworks
     {
-        width: 40%;
+        width: 35%;
         float: left;
         margin: 0;
     }
 
     .logosRedesSociales
     {
-        padding-left: 85px;
+        padding-left: 50px;
     }
 
     footer small
@@ -725,8 +731,8 @@ footer {
 
     #footer ul 
     {
-        margin-left: 75px;
-        width: 50%;
+        margin-left: 50px;
+        width: 58%;
     }
 
     #footer ul li 
@@ -736,7 +742,7 @@ footer {
 
     #footer ul li a 
     {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 /*******************Mobile devices*******************/
@@ -867,7 +873,7 @@ footer {
     /********** TIENDA **********/
     #Tienda 
     {
-        height: 1040px;
+        height: 2800px;
         width: 100%;
     }
 
@@ -883,11 +889,17 @@ footer {
         justify-content: space-evenly;
     }
 
+    .contenedorTienda img 
+    {
+        height: 500px;
+        
+    }
+
     .cajasTienda 
     {
-        width: 45%;
+        width: 90%;
         border: 1px solid white;
-        margin: 20px 15px;
+        margin: 20px 5%;
     }
 
     .cajasTienda img 
@@ -909,8 +921,9 @@ footer {
 
     .entradasBlog
     {
-        width: 70%;
+        width: 80%;
         height: 350px;
+        margin: 100px 10%;
     }
 
     .Textos h3 
@@ -958,11 +971,16 @@ footer {
         font-size: 15px;
     }
 
+    #footer 
+    {
+        width: 100%;
+    }
+    
     #footer ul 
     {
         width: 100%;
         margin-bottom: 50px;
-        padding-right: 40px;
+        padding-right: 20px;
     }
 
     #footer ul li 
@@ -975,80 +993,4 @@ footer {
         font-size: 26px;
     }
 
-}
-
-@media (max-width: 370px)
-{
-    /* FIRST SECTION */
-    #sectionImagen 
-    {
-        width: 100%;
-    }
-
-    /* PLANS SECTION */
-    #Planes
-    {
-        width: 100%;
-        height: 1150px;
-    }
-
-    .imagenesPlanes 
-    {
-        margin: 65px 20px ;
-    }
-
-    /* SHOP */
-    #Tienda
-    {
-        width: 100%;
-    }
-
-    #Tienda h2 
-    {
-        font-size: 65px;
-    }
-
-    .cajasTienda 
-    {
-        width: 45%;
-        margin: 10px 10px;
-    }
-
-    .contenedorTienda img 
-    {
-        height: 200px;
-    }
-
-    /* BLOG */
-    #Blog
-    {
-        width: 100%;
-    }
-
-    .entradasBlog
-    {
-        width: 85%;
-        margin-left: 5%;
-    }
-
-    .Textos h3 
-    {
-        font-size: 24px;
-    }
-
-    #Blog button 
-    {
-        margin-left: 50%;
-    }
-
-    /* FOOTER */
-    #footer ul 
-    {
-        width: 100%;
-    }
-
-    #footer ul li 
-    {
-        text-align: center;
-    }
 }
